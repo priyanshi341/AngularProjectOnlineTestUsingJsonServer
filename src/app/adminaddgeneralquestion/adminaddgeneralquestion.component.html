@@ -1,0 +1,44 @@
+<div class="control-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <label>Enter the question</label>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="generalquesform" (ngSubmit)="submitbuttonaction()">
+                        <label style="font-weight: bold;">Question Id</label>
+                        <input type="text" class="form-control" formControlName="id" />
+                        <span class="errorinfo" *ngIf="generalquesform.controls.id.touched && generalquesform.controls.id.invalid">
+                            Enter the id first</span>
+<br/>
+                        <label style="font-weight: bold;">Question</label>
+                        <input type="text" class="form-control" formControlName="question" />
+  <span class="errorinfo" *ngIf="generalquesform.controls.question.touched && generalquesform.controls.question.invalid">
+                            Enter the question first</span>
+                            <br/>
+                        <label style="font-weight: bold;">Option 1</label>
+                        <input type="text" class="form-control" formControlName="option1" />
+  <span  class="errorinfo" *ngIf="generalquesform.controls.option1.touched && generalquesform.controls.option1.invalid">
+                            Enter the option 1 first</span>
+                            <br/>
+                        <label style="font-weight: bold;">Option 2</label>
+                        <input type="text" class="form-control" formControlName="option2" />
+  <span class="errorinfo"  *ngIf="generalquesform.controls.option2.touched && generalquesform.controls.option2.invalid">
+                            Enter the option 2 first</span>
+                            <br/>
+                        <label style="font-weight: bold;">Option 3</label>
+                        <input type="text" class="form-control" formControlName="option3" />
+                        <span class="errorinfo" *ngIf="generalquesform.controls.option3.touched && generalquesform.controls.option3.invalid">
+                            Enter the option 3 first</span>
+
+                        <br/>
+                        <input type="submit" value="Submit" class="btn btn-primary"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

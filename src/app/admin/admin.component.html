@@ -1,0 +1,39 @@
+<div class="container-fluid">
+   <br/>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+           <div class="card" style="background-color:aliceblue;">
+            <div class="card-header">
+                <label style="text-align: center; color:brown;font-size: larger;font-weight: bold;">Admin Login</label>
+            </div>
+
+
+            <div class="card-body">
+             <form [formGroup]="adminform" (ngSubmit)="adminclickbutton()">
+
+                <label style=" color: black;">Username</label>
+                <input type="text" formControlName="username" class="form-control"/>
+                <span  class="errorinfo" *ngIf="adminform.controls.username.touched && adminform.controls.username.invalid">
+                    <label>please enter the username first</label>
+                </span>
+<br/>
+
+                <label style=" color: black;">Password</label>
+                <input type="password" formControlName="password" class="form-control"/>
+                <span  class="errorinfo" *ngIf="adminform.controls.password.touched && adminform.controls.password.invalid">
+                    <label>please enter the password first</label>
+                </span>
+
+
+                <br/>
+                <input type="submit" value="Login In" class="btn btn-info" style="color:white"/>
+             </form>
+
+            </div>
+           </div>
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

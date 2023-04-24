@@ -1,0 +1,99 @@
+{
+  "Admin": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin@123"
+    }
+  ],
+  "Generalquestions": [
+    {
+      "id": "1",
+      "question": "Which One is the smallest ocean in the world",
+      "option1": "Indian",
+      "option2": "Atlantic",
+      "option3": "Arctic"
+    },
+    {
+      "id": "2",
+      "question": "Which Country Gifted the \"Statue Of Liberty\" to USA in 1886",
+      "option1": "France",
+      "option2": "Canada",
+      "option3": "Brazil"
+    },
+    {
+      "id": "3",
+      "question": "In Which Ocean Bermuda Triangle Ocean Is Located",
+      "option1": "Atlantic",
+      "option2": "Indian",
+      "option3": "Pacific"
+    },
+    {
+      "id": "4",
+      "question": "Which Country Is Known as Playground Of Europe",
+      "option1": "Australia",
+      "option2": "Switzerland",
+      "option3": "Europe"
+    },
+    {
+      "id": "5",
+      "question": "Which Country is also known as land of rising sun",
+      "option1": "japan",
+      "option2": "newzeland",
+      "option3": "china"
+    },
+    {
+      "id": "6",
+      "question": "Which continent has the highest number of countries",
+      "option1": "Africa ",
+      "option2": "North America ",
+      "option3": "Europe"
+    },
+    {
+      "id": "7",
+      "question": "In which country the white elephant is found",
+      "option1": "India",
+      "option2": "Sri Lanka",
+      "option3": "Thailand"
+    },
+    {
+      "id": "8",
+      "question": "Total number of oceans in the world",
+      "option1": "3",
+      "option2": "5",
+      "option3": "7"
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "username": "rahul",
+      "email": "abc@com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "abhijeet",
+      "email": "abhijeet@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "abc",
+      "email": "@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "sandeep",
+      "email": "gmail",
+      "password": "1234"
+    },
+    {
+      "id": 5,
+      "username": "ram",
+      "email": "ram@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

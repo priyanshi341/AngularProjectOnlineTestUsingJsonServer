@@ -1,0 +1,73 @@
+<div class="cotainer-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <label style="color: brown;">Answer The Following Questions</label>
+                </div>
+                <div class="card-body" *ngFor="let i of questionarray |async|paginate:{itemsPerPage:1,currentPage:p}">
+                    <form  [formGroup]="usertestform">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span>{{i.id}}</span>&nbsp;&nbsp; <span>{{i.question}}</span>
+                            </div>
+                        </div>
+                   <br/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="gender"  value="{{i.option1}}">
+                                    <label class="form-check-label" >
+                                      {{i.option1}}
+                                    </label>
+                                  </div>
+                                  </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="gender"  value="{{i.option2}}">
+                                    <label class="form-check-label" >
+                                      {{i.option2}}
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="gender"  value="{{i.option3}}">
+                                    <label class="form-check-label" >
+                                      {{i.option3}}
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-8" >
+                              
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-6" *ngIf="!btncheck"> 
+                                         <input type="button" value="Next" (click)="nextbuttonaction(i.question)" [disabled]="usertestform.invalid"/>
+                                        </div>
+                                        <div class="col-md-6" *ngIf="btncheck">
+                                            <input type="button" value="Submit" (click)="submitbuttonaction(i.question)" [disabled]="usertestform.invalid"/>
+                                        </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                   
+                    </form>
+                    
+                </div>
+                <div *ngIf="chk">
+                    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+

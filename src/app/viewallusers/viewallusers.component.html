@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <table class="table table-stripped" border="1">
+                <tr>
+                    <th style="text-align: center;font-weight: bold;font-size: larger;">Name</th>
+                    <th style="text-align: center;font-weight: bold;font-size: larger;">Email</th>
+                    
+                </tr>
+                <tr *ngFor="let i of userinfo">
+                    <td style="text-align: center;">{{i.username}}</td>
+                    <td style="text-align: center;">{{i.email}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
